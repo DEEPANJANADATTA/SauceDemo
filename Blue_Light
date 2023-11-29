@@ -1,0 +1,6 @@
+@Test(priority = 2 , dependsOnMethods = "bagpack")
+  public void bike_light() {
+	  driver.findElement(By.xpath("//button[@name=\"add-to-cart-sauce-labs-bike-light\"]")).click();   // Add a bike light
+	  driver.findElement(By.xpath("//button[@name=\"remove-sauce-labs-bike-light\"]")).click();   // Remove a bike light
+	  driver.findElement(By.xpath("//button[@name=\"add-to-cart-sauce-labs-bike-light\"]")).click();   // Add a bike light
+  }
